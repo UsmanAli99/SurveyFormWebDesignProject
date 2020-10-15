@@ -3,6 +3,7 @@
     --color-white: #f3f3f3;
     --color-darkblue: #1b1b32;
     --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
 }
 
 *,
@@ -41,7 +42,6 @@ body::before {
     width: 100%;
     margin: 5% auto 0 auto;
 }
-
 h1{
     font-size: 33px;
     font-weight: 400;
@@ -56,7 +56,7 @@ p{
 }
 #survey-form{
     background: var(--color-darkblue-alpha);
-    height: 1000px;
+    height: 1500px;
     width: 720px;
     margin-top: 25px;
     margin-left: 23%;
@@ -121,16 +121,41 @@ input:focus{
     font-size: 16px;
     color: #555050;
 }
-#radio-button{
+#radio-button, #checkbox-button{
     padding-top: 28px;
 }
-input[type=radio] {
+input[type=radio], input[type=checkbox]{
     width: 20px;
     height: 20px;
     margin-top: 10px;
 }
-.radio-span{
+.radio-span, .checkbox-span{
     font-family: 'poppins';
     font-size: 20px;
     padding-left: 10px;
+}
+.input-textarea{
+    font-size: 18px;
+    font-family: 'poppins';
+    height: 125px;
+    width: 630px;
+    margin-top: 8px;   
+    margin-left: 45px;
+}
+::placeholder{
+    font-family: 'poppins';
+    font-size: 16px;
+    padding-left: 8px;
+}
+.input-textarea:focus{
+    font-size: 18px;
+    font-family: 'poppins';
+}
+#submit{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    width: 630px;
+    margin-top: 25px;
+    height: 45px;
+    border-radius: 2px;
 }
