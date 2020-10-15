@@ -10,7 +10,49 @@
                 <h1 id="title">freeCodeCamp Survey Form</h1>
                 <p id="description">Thank you for taking the time to help us improve the platform</p>
             </header>
-            
+            <form id="survey-form">
+                <div id="first">
+                    <label id="name-label" for="name">Name</label>
+                    <input class="form-control" type="input" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div id="second">
+                    <label id="email-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div id="thrid">
+                    <label id="number-label" for="number">Age<span class=spaned>(optional)</span></label>
+                    <input class="form-control" type="number" id="number" name="number" placeholder="Age" min="10" max="99">
+                </div>
+                <div id="fourth">
+                    <label id="DropID" for="dropdownlist">Which option best describes your current role?</label>
+                    <select id="dropdown" class="form-control" name="role" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer no to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div id="five">
+                    <label id="radio-label">Would you recommend freecodecamp to a friend?</label>
+                        <input id="radio-button" type="radio" name="user-recommend" value="definitely" checked><span class="radio-span">Definitely</span></br>
+                        <input id="radio-button" type="radio" name="user-recommend" value="maybe"><span class="radio-span">May be</span></br>
+                        <input id="radio-button" type="radio" name="user-recommend" value="not-sure"><span class="radio-span">Not sure</span>
+                </div>
+                <div id="six">
+                    <label id="DropID" for="dropdownlist">What is your favorite feature of freeCodeCamp?</label>
+                    <select id="dropdown" class="form-control" name="role" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open source">Open Source</option>
+                    </select>
+                </div>
+                <div id="seven">
+                </div>
+            </form>
         </div>
     </body>
 </html>
